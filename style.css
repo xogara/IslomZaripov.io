@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.brand {
+  font-size: 30px;
+  text-decoration: none;
+  color: #309df0;
+  font-weight: 600;
+  animation: animate 1.5s linear infinite;
+  transition: all 0.2s;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+
+  50% {}
+}
+
+.brand:hover {
+  font-size: 31px;
+  transition: all 0.2s;
+}
+
+.but {
+  border-radius: 30px 0px 30px;
+  padding: 15px;
+  width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  transition: all 0.5s;
+  border-color: #309df0;
+  font-size: 17px;
+  color: #309df0;
+}
+
+.but:hover {
+  border-radius: 0px 30px 0px;
+  transition: all 0.5s;
+  border-color: #42c3ca;
+  color: #42c3ca;
+
+}
+
+#animatedObject {
+  position: relative;
+  left: 0;
+  transition: left 0.9s ease;
+  padding: 50px;
+  margin-left: 35px;
+
+}
+
+.tx {
+  color: #309df0;
+  font-size: 75px;
+}
+
+.body {
+  font-size: 16px;
+}
+
+.caard {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  transition: all 0.5s;
+}
+
+.caard:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+}
+
+.texttt {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Hedvig+Letters+Serif:opsz@12..24&family=Josefin+Sans&family=Playfair+Display:wght@500&family=Poppins&family=Satisfy&display=swap');
+
+.text {
+  background-image: url(./img/gf-1.jpg);
+  padding: 40px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.end {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  background-color: #309df0;
+  color: white;
+}
+
+.yt{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid red;
+  background-color: red;
+  font-weight: 600;
+  border-radius: 90px;
+  transition: all 0.5s;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.yt:hover{
+transition: all 0.5s;
+transform: scale(1.1);
+}
+
+.tg{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid #309df0;
+  background-color: #309df0;
+  font-weight: 600;
+  border-radius: 90px;
+  transition: all 0.5s;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.tg:hover{
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.section_our_solution .row {
+  align-items: center;
+}
+
+.our_solution_category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.our_solution_category .solution_cards_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solution_cards_box .solution_card {
+  flex: 0 50%;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+    0 5px 15px 0 rgba(37, 44, 97, 0.15);
+  border-radius: 15px;
+  margin: 8px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 265px;
+  transition: 0.7s;
+}
+
+.solution_cards_box .solution_card:hover {
+  background: #309df0;
+  color: #fff;
+  transform: scale(1.1);
+  z-index: 9;
+}
+
+.solution_cards_box .solution_card:hover::before {
+  background: rgb(85 108 214 / 10%);
+}
+
+.solution_cards_box .solution_card:hover .solu_title h3,
+.solution_cards_box .solution_card:hover .solu_description p {
+  color: #fff;
+}
+
+.solution_cards_box .solution_card:before {
+  content: "";
+  position: absolute;
+  background: rgb(85 108 214 / 5%);
+  width: 170px;
+  height: 400px;
+  z-index: -1;
+  transform: rotate(42deg);
+  right: -56px;
+  top: -23px;
+  border-radius: 35px;
+}
+
+.solution_cards_box .solution_card:hover .solu_description button {
+  background: #fff !important;
+  color: #309df0;
+}
+
+
+.solution_card .solu_title h3 {
+  color: #212121;
+  font-size: 1.3rem;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.solution_card .solu_description p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.solution_card .solu_description button {
+  border: 0;
+  border-radius: 15px;
+  background: linear-gradient(140deg,
+      #42c3ca 0%,
+      #42c3ca 50%,
+      #42c3cac7 75%) !important;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 5px 16px;
+}
+
+.our_solution_content h1 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+
+.hover_color_bubble {
+  position: absolute;
+  background: rgb(54 81 207 / 15%);
+  width: 100rem;
+  height: 100rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 16rem;
+  border-radius: 50%;
+  transform: rotate(-36deg);
+  left: -18rem;
+  transition: 0.7s;
+}
+
+.solution_cards_box .solution_card:hover .hover_color_bubble {
+  top: 0rem;
+}
+
+.solution_cards_box .solution_card .so_top_icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution_cards_box .solution_card .so_top_icon img {
+  width: 40px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/*start media query*/
+@media screen and (min-width: 320px) {
+  .sol_card_top_3 {
+    position: relative;
+    top: 0;
+  }
+
+  .our_solution_category {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .our_solution_category .solution_cards_box {
+    flex: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .our_solution_category .solution_cards_box {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sol_card_top_3 {
+    position: relative;
+    top: -3rem;
+  }
+
+  .our_solution_category {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.cardss {
+  padding: 65px;
+}
